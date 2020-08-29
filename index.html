@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Websocket</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    window.addEventListener("load", function(evt) {
+        let suffix = location.protocol === "https:" ? "wss" : "ws";
+        let ws = new WebSocket(`${suffix}://${location.host}/chat`);
+        ws.onopen = function(evt) {
+            console.log("OPEN");
+        };
+
+        ws.onclose = function(evt) {
+            console.log("CLOSE");
+            ws = null;
+        };
+
+        ws.onmessage = function(evt) {
+            console.log(evt.data);
+        };
+
+        ws.onerror = function(evt) {
+            console.log("ERROR: " + evt.data);
+        };
+    });
+
+</script>
+</body>
+</html>

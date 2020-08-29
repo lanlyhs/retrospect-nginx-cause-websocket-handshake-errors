@@ -1,0 +1,13 @@
+{
+  "name": "retrospect-nginx-cause-websocket-handshake-errors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lanlyhs/retrospect-that-nginx-configuration-issues-cause-websocket-handshake-errors.git",
+  "author": "Lanlyhs <ziqiang.chen@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "ws": "^7.3.1"
+  }
+}
