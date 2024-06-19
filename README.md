@@ -1,4 +1,4 @@
-# Retrospect that nginx configuration issues cause websocket handshake errors
+# Nginx config error cause ws handshake error
 
 ## Start
 
